@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #9de6d9; /* Darker background for contrast */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack elements */
+    background-color: #ffffff; /* White background for contrast */
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 50vh;
+    width: 30vw;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h2 {
+    text-align: center;
+    color: #333; /* Dark text color */
+    margin-bottom: 20px;
+}
+
+.boxes {
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: center;
+    gap: 15px; /* Reduced gap for better alignment */
+}
+
+.box {
+    flex: 1; /* Let boxes take equal space */
+    border: 2px solid #007bff; /* Bootstrap Primary Color */
+    border-radius: 1rem;
+    padding: 0.8rem;
+    background-color: #f8f9fa; /* Light background for buttons */
+    color: #007bff;
+    transition: background 0.3s, color 0.3s;
+    cursor: pointer;
+    text-align: center; /* Center text */
+}
+
+.box:hover {
+    background-color: #e9ecef; /* Light hover effect */
+}
+
+.para {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: #666; /* Slightly lighter text for the divider */
+}
+
+.em-box, .pass-box {
+    margin-bottom: 1rem; /* Space between fields */
+}
+
+.em-box label, .pass-box label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Label color */
+}
+
+.em-box input, .pass-box input {
+    width: 100%; /* Make inputs take full width */
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 2px solid #a3bad4; /* Primary color border */
+    transition: border-color 0.3s;
+}
+
+.em-box input:focus, .pass-box input:focus {
+    border-color: #0056b3; /* Darker blue on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    margin-top: 1rem;
+    width: 100%; /* Full width button */
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 2px solid #007bff;
+    background-color: #007bff; /* Button color */
+    color: white; /* White text */
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-1px); /* Subtle lift effect */
+}
+
+#already {
+    margin-top: 1.2rem;
+    text-align: center; /* Centered text */
+}
+
+#already a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+}
+
+#already a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
