@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #b24592, #f15f79); /* Pink to purple gradient */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff; /* White background for login box */
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 70vh;
+    width: 30vw;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+#email,
+#password {
+    width: 95%;
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s;
+    margin: 10px;
+    background-color: #f7f7f7;
+}
+
+#email:focus,
+#password:focus {
+    border-color: #f15f79;
+    outline: none;
+}
+
+#remember {
+    margin: 10px 6px 10px 15px;
+}
+
+label {
+    font-size: small;
+}
+
+button {
+    margin: 10px;
+    width: 95%;
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #ec407a; /* Bright pink button */
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1.3rem;
+}
+
+button:hover {
+    background-color: #d81b60;
+    transform: translateY(-1px);
+}
+
+p {
+    text-align: center;
+    font-size: smaller;
+    color: gray;
+    padding: .5rem;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.box {
+    flex: 1;
+    border: 2px solid #ccc;
+    padding: .5rem;
+    border-radius: 10px;
+    margin: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.box:hover {
+    background-color: #ec407a;
+    color: white;
+    transform: translateY(-1px);
+    border-color: #ec407a;
+}
+
+.redirect {
+    text-align: center;
+    font-size: smaller;
+    color: gray;
+    padding: .5rem;
+}
+
+.redirect a {
+    text-decoration: none;
+    color: #ec407a;
+}

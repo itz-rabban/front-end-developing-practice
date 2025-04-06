@@ -64,11 +64,6 @@ h2 {
     margin-bottom: 1rem; /* Space between fields */
 }
 
-.em-box label, .pass-box label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333; /* Label color */
-}
 
 .em-box input, .pass-box input {
     width: 100%; /* Make inputs take full width */
